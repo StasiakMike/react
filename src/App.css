@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background: url(/assets/background.jpg);
+  background-size: 100%;
+  background-position: 0 -115px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header h1 {
+  font-size: 70px;
+  font-weight: 900;
+  text-shadow: #222 4px 4px 6px;
+}
+
+.content {
+  display: flex;
+}
+
+.compose {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.component_icon {
+  width: 50px;
+  height: 50px;
+}
+
+.components {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1/3;
+}
+
+.componentRow {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.orderRow {
+  display: flex;
+  padding-right: 20px;
+}
+
+.componentRow p:last-child, .orderRow h3:last-child {
+  margin-left: auto;
+}
+
+.size {
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.size.small {
+  width: 50px;
+  height: 50px;
+}
+
+.size.large {
+  width: 70px;
+  height: 70px;
+}
+
+.size.choice {
+  background-color: brown;
+}
+
+button {
+  padding: 3px 10px;
+  font-size: 20px;
+  background-color: royalblue;
+  color: white;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #aaa;
+  color: #444;
+  cursor: not-allowed;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .components {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
